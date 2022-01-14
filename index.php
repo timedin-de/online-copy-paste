@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<script src="resources/script.js"></script>
+	</head>
+	<body id="pageContent">
+		<h1>Copy-Paste</h1>
+
+		<style type="text/css">
+			#In-Output {
+				width: 90%;
+				margin-left: 5%;
+			}
+			#syncing {
+				height: 40px;
+			}
+		</style>
+		<p id="newJoin">...</p>
+		<p id="syncing">Syncing...</p>
+
+		<textarea id="In-Output" rows="10" onchange="send(this);" onkeydown="send(this);" oninput="send(this);"></textarea>
+		<p>Schreibe hier etwas, auf anderen Geräten wird der Text synchronisiert.</p>
+		<div id="legalNotice">
+			<sub>Der Text wird unverschlüsselt übertragen und ist für jeden Websitenbesucher sichtbar, benutze diese Seite nicht für Passwörter etc. und öffne keine Unbekannten Links. Der Text durchläuft einen Textfilter, trotzdem übernehmen wir keine Haftung für den angezeigten Text!<br>Alle 2 Sekunden wird der Text neu abgerufen.<br>Sollte der Text nicht aktualisieren bzw. dauerhaft Syncing angezeigt werden, überprüfe deine Internetverbindung. Wenn die nicht das Problem ist, wurde vermutlicht ein falsches Zeichen eingegeben, gebe einfach bei dir etwas neues ein.</sub></div>
+	</body>
+</html>
